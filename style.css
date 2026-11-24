@@ -176,11 +176,11 @@ li a:hover {
 main {
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 }
 
 .design {
   margin-top: 150px;
-  /* background-color: aquamarine; */
   padding-left: 165px;
 }
 
@@ -193,14 +193,12 @@ main {
 }
 
 .design > div {
-  /* background-color: yellow; */
   padding: 20px;
   display: flex;
-  height: 882px;
+  align-items: center;
 }
 
 .content {
-  /* background-color: violet; */
   width: 50%;
 }
 
@@ -225,17 +223,62 @@ main {
 }
 
 .cover {
-  /* background-color: tomato; */
   padding: 20px;
   width: 50%;
   position: relative;
-  overflow-x: hidden;
+  height: 882px;
 }
 
 .cover :first-child {
   position: absolute;
+  height: 100%;
 }
 
 .cover :last-child {
   position: absolute;
+  height: 100%;
+}
+
+.state {
+  height: 400px;
+  background-color: #3a3c5a;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-bottom: 116px;
+  margin-top: 57px;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position-y: -500px;
+  background-position-x: -200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 165px;
+  position: relative;
+}
+
+.state img {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  bottom: -110px;
+}
+
+.state div {
+  color: white;
+  max-width: 540px;
+}
+
+.state div h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin-bottom: 5px;
+}
+
+.state div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
 }
