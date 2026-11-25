@@ -21,8 +21,8 @@ header {
   max-width: 1440px;
   margin-inline: auto;
   padding: 59px 167px 155px 167px;
-  background-image:
-    url(./images/bg-pattern-intro-desktop.svg), linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  background-image: url(./images/bg-pattern-intro-desktop.svg),
+    linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
   background-position-y: -1350px, center;
   background-position-x: -400px, center;
   background-repeat: no-repeat;
@@ -236,6 +236,10 @@ main {
   height: 882px;
 }
 
+.cover :nth-child(2) {
+  display: none;
+}
+
 .cover :first-child {
   position: absolute;
   height: 100%;
@@ -305,6 +309,9 @@ main {
   z-index: 1;
   height: 786px;
   left: -275px;
+}
+.laptop-mobile {
+  display: none;
 }
 
 .free-open div {
@@ -390,6 +397,7 @@ footer ul :first-child {
 
   .design {
     padding: 100px 24px;
+    margin-top: 100px;
   }
 
   .design div {
@@ -398,26 +406,76 @@ footer ul :first-child {
 
   .content {
     width: 100%;
+    text-align: center;
   }
 
   .cover {
     width: 100%;
     height: 326px;
+    padding: 0;
+    position: relative;
+    margin-bottom: 46px;
   }
-
-  /* .cover img {
-    width: 326px;
-    height: 103px;
-  } */
-
+  .cover :nth-child(2) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+  }
   .cover :first-child {
-    width: 326px;
-    height: 326px;
     display: none;
   }
 
   .cover :last-child {
-    width: 326px;
-    height: 326px;
+    display: none;
   }
+}
+.design > div {
+  padding: 0;
+}
+.state {
+  max-width: 375px;
+  margin-inline: auto;
+  height: 625px;
+  margin-top: 273px;
+  padding-right: 0;
+  text-align: center;
+  background-size: 602px;
+  background-position-x: -120px;
+  background-position-y: -245px;
+}
+
+.state img {
+  left: 50%;
+  transform: translateX(-50%);
+  top: -170px;
+  width: 350px;
+}
+.free-open {
+  padding: 0;
+  flex-direction: column;
+  text-align: center;
+  max-width: 375px;
+  margin-inline: auto;
+}
+.laptop {
+  display: none;
+}
+.laptop-mobile {
+  display: inline-block;
+}
+footer {
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 75px;
+  gap: 40px;
+  text-align: center;
+  max-width: 375px;
+  margin-inline: auto;
+  padding-bottom: 75px;
+}
+footer img {
+  margin-bottom: 32px;
 }
